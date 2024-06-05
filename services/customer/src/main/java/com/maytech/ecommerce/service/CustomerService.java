@@ -1,10 +1,9 @@
 package com.maytech.ecommerce.service;
 
-import com.maytech.ecommerce.customer.Customer;
-import com.maytech.ecommerce.customer.CustomerMapper;
-import com.maytech.ecommerce.customer.CustomerRequest;
-import com.maytech.ecommerce.customer.CustomerResponse;
+import com.maytech.ecommerce.entity.Customer;
 import com.maytech.ecommerce.exception.CustomerNotFoundException;
+import com.maytech.ecommerce.model.CustomerRequest;
+import com.maytech.ecommerce.model.CustomerResponse;
 import com.maytech.ecommerce.repository.CustomerRepository;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang.StringUtils;

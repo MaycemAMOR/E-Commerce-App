@@ -1,5 +1,7 @@
-package com.maytech.ecommerce.customer;
+package com.maytech.ecommerce.controller;
 
+import com.maytech.ecommerce.model.CustomerRequest;
+import com.maytech.ecommerce.model.CustomerResponse;
 import com.maytech.ecommerce.service.CustomerService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

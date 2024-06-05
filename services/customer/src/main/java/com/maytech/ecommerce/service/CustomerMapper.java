@@ -1,5 +1,8 @@
-package com.maytech.ecommerce.customer;
+package com.maytech.ecommerce.service;
 
+import com.maytech.ecommerce.entity.Customer;
+import com.maytech.ecommerce.model.CustomerRequest;
+import com.maytech.ecommerce.model.CustomerResponse;
 import org.springframework.stereotype.Service;
 
 @Service

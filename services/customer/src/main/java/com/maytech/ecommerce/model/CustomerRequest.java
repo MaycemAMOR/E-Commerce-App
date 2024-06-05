@@ -1,5 +1,6 @@
-package com.maytech.ecommerce.customer;
+package com.maytech.ecommerce.model;
 
+import com.maytech.ecommerce.entity.Address;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
 

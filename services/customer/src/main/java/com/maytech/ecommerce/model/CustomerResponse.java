@@ -1,4 +1,6 @@
-package com.maytech.ecommerce.customer;
+package com.maytech.ecommerce.model;
+
+import com.maytech.ecommerce.entity.Address;
 
 public record CustomerResponse(
         String id,

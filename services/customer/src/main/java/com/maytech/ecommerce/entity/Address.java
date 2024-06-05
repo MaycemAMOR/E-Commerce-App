@@ -1,4 +1,4 @@
-package com.maytech.ecommerce.customer;
+package com.maytech.ecommerce.entity;
 
 import lombok.*;
 import org.springframework.data.mongodb.core.mapping.Document;
