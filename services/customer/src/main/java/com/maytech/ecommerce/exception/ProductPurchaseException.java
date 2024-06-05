@@ -1,0 +1,6 @@
+package com.maytech.ecommerce.exception;
+
+public class ProductPurchaseException extends RuntimeException {
+    public ProductPurchaseException(String s) {
+    }
+}
