@@ -16,3 +16,5 @@ spring:
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
       properties:
         spring.json.type.mapping: paymentConfirmation:com.maytech.ecommerce.kafka.PaymentNotificationRequest
+server:
+  port: 8060
