@@ -13,7 +13,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-@RequestMapping("/api/v1/order-line")
+@RequestMapping("/api/v1/order-lines")
 public class OrderLineController {
     private final OrderLineService service;
 
