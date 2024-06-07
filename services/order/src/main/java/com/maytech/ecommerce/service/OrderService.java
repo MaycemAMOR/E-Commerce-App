@@ -8,6 +8,8 @@ import com.maytech.ecommerce.model.OrderLineRequest;
 import com.maytech.ecommerce.model.OrderRequest;
 import com.maytech.ecommerce.model.OrderResponse;
 import com.maytech.ecommerce.model.product.PurchaseRequest;
+import com.maytech.ecommerce.payment.PaymentClient;
+import com.maytech.ecommerce.payment.PaymentRequest;
 import com.maytech.ecommerce.product.ProductClient;
 import com.maytech.ecommerce.repository.OrderRepository;
 import jakarta.persistence.EntityNotFoundException;
@@ -27,6 +29,7 @@ public class OrderService {
     private final OrderMapper mapper;
     private final OrderLineService orderLineService;
     private final OrderProducer orderProducer;
+    private final PaymentClient paymentClient;
 
     public Integer createOrder(OrderRequest request) {
 
@@ -53,6 +56,13 @@ public class OrderService {
         }
 
         // todo start payment process
+        var paymentRequest = new PaymentRequest(
+                request.amount(),
+                request.paymentMethod(),
+                order.getId(),
+                order.getReference(),
+                customer);
+        paymentClient.requestOrderPayment(paymentRequest);
 
 
         //send the order confirmation --> notification-microservice (kafka)
