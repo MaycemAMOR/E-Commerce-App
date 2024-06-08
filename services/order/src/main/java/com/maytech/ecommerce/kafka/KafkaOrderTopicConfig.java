@@ -1,4 +1,4 @@
-package com.maytech.ecommerce.config;
+package com.maytech.ecommerce.kafka;
 
 import org.apache.kafka.clients.admin.NewTopic;
 import org.springframework.context.annotation.Bean;
