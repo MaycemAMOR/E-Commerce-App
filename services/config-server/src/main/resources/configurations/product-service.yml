@@ -18,3 +18,8 @@ spring:
     baseline-version: 0
     user: ${spring.datasource.username}
     password: ${spring.datasource.password}
+    validate-on-migrate: false
+logging:
+  level:
+    org:
+      springframework: debug

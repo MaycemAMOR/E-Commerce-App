@@ -15,4 +15,6 @@ ${AnsiColor.BRIGHT_GREEN}
 #########################################################################################################################################################
 Spring-boot: ${spring-boot.version}
 JDK: ${java.version}
+Developed by: Maycem AMOR
+MayTechCoding. All rights reserved
 ${AnsiColor.BRIGHT_WHITE}

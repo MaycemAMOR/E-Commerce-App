@@ -3,6 +3,8 @@ spring:
     active: native
   application:
     name: config-server
+  banner:
+    location: classpath:banner/banner.txt
   cloud:
     config:
       server:
@@ -10,3 +12,7 @@ spring:
           search-locations: classpath:/configurations
 server:
   port: 8888
+logging:
+  level:
+    org:
+      springframework: debug

@@ -6,7 +6,7 @@ spring:
     password: mamor
   jpa:
     hibernate:
-      ddl-auto: validate
+      ddl-auto: update
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
   kafka:
@@ -18,3 +18,7 @@ spring:
         spring.json.type.mapping: paymentConfirmation:com.maytech.ecommerce.kafka.PaymentNotificationRequest
 server:
   port: 8060
+logging:
+  level:
+    org:
+      springframework: debug

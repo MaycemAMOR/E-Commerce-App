@@ -5,11 +5,11 @@ import com.maytech.ecommerce.entity.PaymentMethod;
 import java.math.BigDecimal;
 
 public record PaymentNotificationRequest(
-        String OrderReference,
+        String orderReference,
         BigDecimal amount,
         PaymentMethod paymentMethod,
         String customerFirstName,
         String customerLastName,
-        String CustomerEmail
+        String customerEmail
 ) {
 }

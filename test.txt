@@ -1,0 +1,34 @@
+http://localhost:8222/api/v1/orders
+{
+    "reference": "MS-20241201",
+    "amount":900,
+    "paymentMethod": "PAYPAL",
+    "customerId": "6664bbfdce81296d633b312f",
+    "products":[
+        {
+            "productId": 1,
+            "quantity": 1
+        },
+        {
+            "productId": 251,
+            "quantity": 1
+        },
+        {
+            "productId": 851,
+            "quantity": 1
+        }
+    ]
+}
+
+
+http://localhost:8222/api/v1/customers
+{
+    "firstname": "mamor",
+    "lastname": "mamor",
+    "email": "mamor@email.com",
+    "address":{
+        "street": "rue vasco de gama",
+        "houseNumber": "603",
+        "zipCode": "91300"
+    }
+}

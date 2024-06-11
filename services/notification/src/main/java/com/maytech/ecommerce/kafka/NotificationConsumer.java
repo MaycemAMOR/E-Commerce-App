@@ -23,7 +23,7 @@ import static java.lang.String.format;
 public class NotificationConsumer {
 
     private final EmailService emailService;
-    private NotificationRepository repository;
+    private final NotificationRepository repository;
 
     @KafkaListener(topics = "payment-topic")
     public void consumePaymentSuccessNotification(PaymentConfirmation paymentConfirmation) throws MessagingException {
@@ -62,7 +62,7 @@ public class NotificationConsumer {
                 orderConfirmation.customer().email(),
                 customerName,
                 orderConfirmation.totalAmount(),
-                orderConfirmation.OrderReference(),
+                orderConfirmation.orderReference(),
                 orderConfirmation.products()
         );
     }
